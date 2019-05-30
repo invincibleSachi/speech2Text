@@ -1,0 +1,53 @@
+<form class="navbar-form navbar-left" role="search">
+  <br />
+  <br />
+  <div class="btn-space">
+    <button
+      type="submit"
+      class="btn btn-primary btn-space"
+      [disabled]="recordingEnabled"
+      (click)="onclickRecord()"
+    >
+      Start Recording
+    </button>
+    <button
+      type="submit"
+      (click)="onclickStopRecord()"
+      class="btn btn-primary btn-space"
+      [disabled]="!recordingEnabled"
+    >
+      Stop Recording
+    </button>
+  </div>
+  <br />
+  <div class="col-xs-4">
+    <div class="dropdown left-margin select">
+      <select
+        class="form-control select"
+        (change)="ChangingValue($event)"
+        [value]="defaultLang"
+      >
+        <option value="English-US">English-US</option>
+        <option value="English-UK">English-UK</option>
+        <option value="Hindi">Hindi</option>
+      </select>
+    </div>
+    <br />
+    <input
+      class="left-margin-text"
+      type="text"
+      id="googleKey"
+      placeholder="Enter Google API Key"
+    />
+  </div>
+  <br />
+  <br />
+  <div class="form-group left-margin">
+    <label for="comment " class="left-margin-text">Text:</label>
+    <textarea
+      class="form-control left-margin right-margin"
+      rows="5"
+      id="comment"
+    ></textarea>
+  </div>
+</form>

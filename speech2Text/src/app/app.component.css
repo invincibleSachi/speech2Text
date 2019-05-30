@@ -1,0 +1,20 @@
+.btn-space {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.left-margin {
+  margin-left: 15px;
+}
+.left-margin-text {
+  margin-left: 25px;
+}
+.size-textbox {
+  size: 140px;
+}
+.select {
+  width: 100%;
+  max-width: 150px;
+}
+.right-margin {
+  margin-right: 15px;
+}
